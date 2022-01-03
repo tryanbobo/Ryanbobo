@@ -57,10 +57,11 @@ var skillIcon = new LeafIcon({iconUrl:'https://img.icons8.com/external-kiranshas
 // Markers
 var skills = L.marker([27.174961, 78.042385], {icon: skillIcon})
   .bindTooltip('Skills', { permanent: true, direction: 'auto', offset: [18, -18] }).addTo(mymap);
-  skills.bindPopup("<div id='skills'><b><strong> Taj Mahal </strong><b> <br>\
-  <img src='images/Taj_Mahal.jpeg' alt='Taj_Mahal' width='128px' height='100'>\
-  <br><p>The Taj Mahal 'Crown of the Palace', is an ivory-white marble mausoleum\
-  on the southern bank of the river Yamuna in the Indian city of Agra. </p></div>").openPopup();
+  skills.bindPopup("<div id='skills'><b><strong> Skill / Years </strong><b> <br>\
+  <img src='images/skill.png' alt='Taj_Mahal' width='128px' height='100'>\<br><p>\
+  Python / 6<br>Arcpy / 5<br>Javascript / 3<br>ArcGIS API for JavaScript / 2<br>SQL / 9<br>ESRI products / 9<br> AutoDesk / 8<br> \
+  FME / 7<br>Mapcom products / 8 \
+  </p></div>").openPopup();
 
 var project = L.marker([40.334245, 116.477652], {icon: wallIcon})
   .bindTooltip('Projects', { permanent: true, direction: 'auto', offset: [18, -18] }).addTo(mymap);
@@ -74,7 +75,7 @@ var project = L.marker([40.334245, 116.477652], {icon: wallIcon})
 var certificates = L.marker([30.328611, 35.441944], {icon: certiIcon})
   .bindTooltip('Certificates', { permanent: true, direction: 'auto', offset: [18, -18] }).addTo(mymap);
   certificates.bindPopup("<div id='certificates'><b><strong> Certificates </strong><b><br>\
-  <img src='images/petra.jpg' width='128px' height='100'><br><p><a href=certificates/EsriSpacialAnalyst2012.pdf target=blank rel=noopener noreferrer>Esri - Learning Spatial Analyst</a><br> \
+  <br><p><a href=certificates/EsriSpacialAnalyst2012.pdf target=blank rel=noopener noreferrer>Esri - Learning Spatial Analyst</a><br> \
 	<a href=certificates/GoingPlaceswithSpatialAnalysis.pdf target=blank rel=noopener noreferrer>Esri - Going Places with Spatial Analysis</a><br> \
   <a href=certificates/GIS_PythonForEveryone.pdf target=blank rel=noopener noreferrer>Python for Everyone</a><br> \
   <a href=certificates/BasicsOfPython.pdf target=blank rel=noopener noreferrer>Esri - Basics of Python</a><br> \
@@ -181,4 +182,4 @@ var ZoomViewer = L.Control.extend({
 });
 
 (new ZoomViewer).addTo(mymap);
-mymap.setView([0,0], 9);
+mymap.setView([0,0], 7);
